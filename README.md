@@ -1,13 +1,17 @@
 # Proyek Akhir Data Science
 ## Latar Belakang:
-Jaya Jaya Institut merupakan salah satu institusi pendidikan perguruan yang telah berdiri sejak tahun 2000. Hingga saat ini ia telah mencetak banyak lulusan dengan reputasi yang sangat baik. Akan tetapi, terdapat banyak juga siswa yang tidak menyelesaikan pendidikannya alias dropout.
+Jaya Jaya Institut merupakan institusi pendidikan tinggi yang telah berdiri sejak tahun 2000 dan telah mencetak banyak lulusan berkualitas. Meskipun memiliki reputasi baik, data internal menunjukkan bahwa tingkat dropout (mahasiswa yang tidak menyelesaikan pendidikan) masih cukup tinggi. Fenomena ini tentu menjadi perhatian serius karena dropout tidak hanya berdampak pada reputasi institusi, tetapi juga pada efektivitas proses pendidikan dan efisiensi sumber daya.
 
-Jumlah dropout yang tinggi ini tentunya menjadi salah satu masalah yang besar untuk sebuah institusi pendidikan. Oleh karena itu, Jaya Jaya Institut ingin mendeteksi secepat mungkin siswa yang mungkin akan melakukan dropout sehingga dapat diberi bimbingan khusus
+Untuk itu, Jaya Jaya Institut berinisiatif menggunakan data science untuk memahami dan menganalisis pola dropout, sehingga dapat mendeteksi lebih awal potensi mahasiswa yang berisiko tinggi keluar dari institusi, dan memberikan bimbingan khusus untuk meningkatkan retensi mahasiswa.
 ## Permasalahan Bisnis:
-.....
+Bagaimana Jaya Jaya Institut dapat:
+- Mengidentifikasi faktor-faktor yang paling memengaruhi mahasiswa untuk melakukan dropout?
+- Memonitor status mahasiswa secara real-time menggunakan dashboard interaktif?
+- Mengembangkan strategi berbasis data untuk mengurangi angka dropout dan meningkatkan tingkat kelulusan?
 ## Cakupan Proyek:
-- Mengidentifikasi Faktor Penyebab Tinggi Tingkat Attrisi 
-- Mengembangkan Dashboard Bisnis untuk Pemantauan Real-Time
+- Mengidentifikasi faktor penyebab utama tingginya angka dropout.
+- Menganalisis hubungan antara beasiswa, status pernikahan, jurusan, dan asal negara terhadap kelulusan.
+- Mengembangkan dashboard bisnis untuk memantau data mahasiswa secara visual dan real-time.
 ## Persiapan:
 ### Sumber data : https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/main/employee/employee_data.csv
 ### Setup Environment - Anaconda:
@@ -26,11 +30,11 @@ https://drive.google.com/file/d/1lXUQORRzwqrV8w1pX2TANBiLEhEQ6VX8/view?usp=shari
 https://drive.google.com/file/d/1lXUQORRzwqrV8w1pX2TANBiLEhEQ6VX8/view?usp=sharing
 ![Dashboard](./nuraisah_oxzV_dicoding-dashboard.png)
 Insight Berdasarkan Data:
-- Dari overtime (lembur): Pegawai yang tidak melakukan lembur justru cenderung melakukan attrisi. Hal ini dapat menunjukkan bahwa keterlibatan rendah atau beban kerja yang tidak mencukupi mungkin membuat pegawai merasa kurang tertantang atau kurang terikat secara emosional dengan pekerjaannya.
-- Dari usia (age group): Pegawai dengan rentang usia 18–30 tahun menunjukkan tingkat attrisi tertinggi dibandingkan kelompok usia lainnya. Kemungkinan ini disebabkan oleh keinginan eksplorasi karier, kebutuhan pertumbuhan lebih cepat, atau ketidakcocokan budaya kerja.
-- Dari gender: Pegawai laki-laki memiliki tingkat attrisi yang lebih tinggi dibandingkan perempuan.
-- Dari posisi/jabatan: Teknisi laboratorium (Laboratory Technician) adalah posisi yang memiliki tingkat attrisi tertinggi di antara semua peran. Hal ini mungkin disebabkan oleh tekanan pekerjaan, rutinitas yang monoton, atau kurangnya jenjang karier yang jelas.
-- Dari masa kerja (working years): Pegawai dengan pengalaman kerja 0–10 tahun adalah kelompok paling banyak yang mengalami attrisi. Ini menunjukkan pentingnya strategi onboarding, engagement, dan retensi di awal masa kerja pegawai.
+- Asal Mahasiswa: Mayoritas mahasiswa berasal dari Portugal, dan sebagian besar yang dropout juga berasal dari negara ini.
+- Jurusan Terpopuler: Jurusan dengan jumlah mahasiswa terbanyak adalah Manajemen (terutama kelas malam) dan Keperawatan, yang juga memiliki proporsi dropout tinggi.
+- Beasiswa dan Dropout: Mahasiswa penerima beasiswa cenderung lebih rendah tingkat dropout-nya. Hal ini mengindikasikan bahwa beasiswa mungkin berperan sebagai motivasi untuk menyelesaikan studi.
+- Status Pernikahan: Mahasiswa lajang memiliki jumlah dropout dan kelulusan yang tinggi, sedangkan yang menikah atau bercerai jumlahnya sedikit, namun tetap terdapat dropout dari kelompok ini.
+- Gender: Berdasarkan warna visual, data dapat dipilah berdasarkan gender, meskipun belum ditampilkan secara eksplisit pada pie chart atau bar chart.
 ## Conclusion
 Berdasarkan hasil analisis data pegawai, perusahaan menghadapi tantangan signifikan dalam mengelola tingkat attrisi, terutama di kalangan pegawai muda, pria, dan mereka yang berada pada posisi awal karier. Beberapa pola penting yang berhasil diidentifikasi mencerminkan adanya potensi masalah dalam keterlibatan karyawan dan strategi retensi jangka panjang.
 Overtime (Lembur): Pegawai yang tidak melakukan lembur justru memiliki tingkat attrisi yang lebih tinggi. Hal ini dapat mengindikasikan kurangnya keterlibatan dalam pekerjaan, minimnya tantangan, atau beban kerja yang terlalu ringan sehingga menurunkan motivasi kerja.
