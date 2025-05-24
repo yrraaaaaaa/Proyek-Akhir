@@ -25,9 +25,9 @@ Bagaimana Jaya Jaya Institut dapat:
 - pipenv shell
 - pip install -r requirements.txt
 ### Run steamlit app
-https://drive.google.com/file/d/1lXUQORRzwqrV8w1pX2TANBiLEhEQ6VX8/view?usp=sharing
+https://drive.google.com/file/d/1AjCuyQ53M_FF4IyfzRFdGgzTDbart94W/view?usp=sharing
 ## Business Dashboard
-https://drive.google.com/file/d/1lXUQORRzwqrV8w1pX2TANBiLEhEQ6VX8/view?usp=sharing
+https://drive.google.com/file/d/1AjCuyQ53M_FF4IyfzRFdGgzTDbart94W/view?usp=sharing
 ![Dashboard](./nuraisah_oxzV_dicoding-dashboard.png)
 Insight Berdasarkan Data:
 - Asal Mahasiswa: Mayoritas mahasiswa berasal dari Portugal, dan sebagian besar yang dropout juga berasal dari negara ini.
