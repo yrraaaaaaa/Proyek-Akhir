@@ -4,10 +4,9 @@ Jaya Jaya Institut merupakan institusi pendidikan tinggi yang telah berdiri seja
 
 Untuk itu, Jaya Jaya Institut berinisiatif menggunakan data science untuk memahami dan menganalisis pola dropout, sehingga dapat mendeteksi lebih awal potensi mahasiswa yang berisiko tinggi keluar dari institusi, dan memberikan bimbingan khusus untuk meningkatkan retensi mahasiswa.
 ## Permasalahan Bisnis:
-Bagaimana Jaya Jaya Institut dapat:
-- Mengidentifikasi faktor-faktor yang paling memengaruhi mahasiswa untuk melakukan dropout?
-- Memonitor status mahasiswa secara real-time menggunakan dashboard interaktif?
-- Mengembangkan strategi berbasis data untuk mengurangi angka dropout dan meningkatkan tingkat kelulusan?
+- Institusi pendidikan kesulitan dalam mengenali faktor-faktor signifikan yang memengaruhi keputusan mahasiswa untuk keluar dari studi.
+- Belum tersedia sistem dashboard interaktif yang mampu memantau status akademik mahasiswa secara real-time.
+- Minimnya strategi berbasis data yang terarah dalam menekan angka dropout dan meningkatkan tingkat kelulusan mahasiswa.
 ## Cakupan Proyek:
 - Mengidentifikasi faktor penyebab utama tingginya angka dropout.
 - Menganalisis hubungan antara beasiswa, status pernikahan, jurusan, dan asal negara terhadap kelulusan.
