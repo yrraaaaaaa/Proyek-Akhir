@@ -6,8 +6,8 @@ import altair as alt
 # Judul Dashboard
 st.title("Institute Student Performance Dashboard")
 
-# Upload file CSV
-uploaded_file = st.file_uploader("Upload file CSV", type=['csv'])
+# Baca data dari GitHub (RAW URL)
+url = 'https://raw.githubusercontent.com/yrraaaaaaa/Proyek-Akhir/main/data/data_bersih.csv'
 
 # Warna untuk kategori
 dropout_color = '#f781bf'    # Pink muda
@@ -15,8 +15,9 @@ enrolled_color = '#f768a1'   # Pink cerah
 graduate_color = '#ae017e'   # Magenta
 pie_colors = [dropout_color, graduate_color]
 
-if uploaded_file is not None:
-    df = pd.read_csv(uploaded_file, sep=';')
+
+try:
+    df = pd.read_csv(url, sep=';')
     df.columns = df.columns.str.strip().str.lower()
 
     # Validasi kolom penting
@@ -33,11 +34,11 @@ if uploaded_file is not None:
     df['scholarship'] = df['scholarship'].str.strip().str.lower()
     df['marital_status'] = df['marital_status'].str.strip().str.capitalize()
 
-    # Filter data sesuai tampilan gambar
+    # Filter data
     df = df[df['status'].isin(['Dropout', 'Enrolled', 'Graduate'])]
     df = df[df['nationality'].isin(['Portuguese', 'Brazilian', 'Santomean'])]
 
-    # METRIC - Total Enrolled, Graduate, Dropout
+    # METRIC
     col1, col2, col3 = st.columns(3)
     col1.metric("Enrolled", df[df['status'] == 'Enrolled'].shape[0])
     col2.metric("Graduate", df[df['status'] == 'Graduate'].shape[0])
@@ -54,7 +55,7 @@ if uploaded_file is not None:
     ).properties(height=300)
     st.altair_chart(chart_country, use_container_width=True)
 
-    # MOST STUDENT COURSES (Top 5) - khusus Dropout
+    # MOST STUDENT COURSES (Top 5) - Dropout only
     st.subheader("Most Student Courses (Dropout Only)")
     dropout_courses = df[df['status'] == 'Dropout']['course'].value_counts().head(5).reset_index()
     dropout_courses.columns = ['course', 'count']
@@ -100,5 +101,5 @@ if uploaded_file is not None:
     ).properties(height=300)
     st.altair_chart(marital_chart, use_container_width=True)
 
-else:
-    st.info("Silakan upload file CSV terlebih dahulu.")
+except Exception as e:
+    st.error(f"Gagal memuat data dari GitHub: {e}")
