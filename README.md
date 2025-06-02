@@ -34,11 +34,11 @@ Insight Berdasarkan Data:
 - Beasiswa dan Dropout: Mahasiswa penerima beasiswa cenderung lebih rendah tingkat dropout-nya. Hal ini mengindikasikan bahwa beasiswa mungkin berperan sebagai motivasi untuk menyelesaikan studi.
 - Status Pernikahan: Mahasiswa lajang memiliki jumlah dropout dan kelulusan yang tinggi, sedangkan yang menikah atau bercerai jumlahnya sedikit, namun tetap terdapat dropout dari kelompok ini.
 - Gender: Berdasarkan warna visual, data dapat dipilah berdasarkan gender, meskipun belum ditampilkan secara eksplisit pada pie chart atau bar chart.
+
 ## Menjalankan Sistem Machine Learning
 Pada proyek ini telah disediakan sebuah prototype untuk melakukan prediksi terhadap model yang sudah dibuat. Untuk menjalankan protoype secara lokal jalankan perintah berikut di terminal: streamlit run app.py
 Atau buka pada tautan ini: https://proyek-akhir-gyxnsxygmdewu5myqeykzc.streamlit.app/
 
-Jika ingin memunculkannya tambahkan terlebih dahulu dataset nya di file data: data_bersih.csv
 
 ## Conclusion
 Berdasarkan analisis data yang ditampilkan melalui dashboard kinerja mahasiswa Jaya Jaya Institut, dapat disimpulkan bahwa permasalahan tingkat dropout yang tinggi masih menjadi tantangan signifikan bagi institusi. Mahasiswa yang berasal dari Portugal merupakan kelompok terbanyak baik dari segi kelulusan maupun angka dropout, yang menunjukkan bahwa faktor asal negara dapat memiliki keterkaitan tertentu dengan keberhasilan studi. Selain itu, jurusan-jurusan dengan jumlah mahasiswa terbanyak seperti Manajemen (terutama kelas malam) dan Keperawatan juga menunjukkan proporsi dropout yang cukup tinggi, yang mungkin mengindikasikan adanya tekanan akademik atau beban studi yang berat di program-program tersebut.
