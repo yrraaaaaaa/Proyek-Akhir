@@ -65,7 +65,7 @@ page = st.sidebar.radio("Pilih Halaman", ["📊 Visualisasi Data", "🔮 Prediks
 # =======================
 # 📊 Visualisasi Data
 if page == "📊 Visualisasi Data":
-    st.title("Institute Student Performance Dashboard")
+    st.title("Institute Student Performance")
 
     try:
         df = load_data()
